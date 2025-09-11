@@ -1,0 +1,21 @@
+for google chrome:
+google-chrome --force-device-scale-factor=1.25
+
+make permanent:
+edit chrome launcher
+sudo nano /usr/share/applications/google-chrome.desktop
+add tp exec line:
+Exec=/usr/bin/google-chrome-stable --force-device-scale-factor=1.25 %U
+
+for vs-code:
+export GDK_SCALE=1
+export GDK_DPI_SCALE=1.25
+code
+
+make permanent:
+add these to you ~/.profile or ~/.bashrc:
+export GDK_SCALE=1
+export GDK_DPIS_SCALE=1.25
+
+wtf!!1
+
